@@ -9,7 +9,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import <pop/POPVector.h>
+#if defined POP_SWIFT_PACKAGE
+    #import <POPVector.h>
+#else
+    #import <pop/POPVector.h>
+#endif
 
 namespace POP {
   

@@ -9,7 +9,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import <pop/POPAnimationTracer.h>
+#if defined POP_SWIFT_PACKAGE
+    #import <POPAnimationTracer.h>
+#else
+    #import <pop/POPAnimationTracer.h>
+#endif
 
 @interface POPAnimationTracer (Internal)
 

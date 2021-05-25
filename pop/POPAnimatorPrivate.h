@@ -7,7 +7,11 @@
  of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import <pop/POPAnimator.h>
+#if defined POP_SWIFT_PACKAGE
+    #import <POPAnimator.h>
+#else
+    #import <pop/POPAnimator.h>
+#endif
 
 @class POPAnimation;
 

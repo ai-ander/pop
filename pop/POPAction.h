@@ -12,7 +12,11 @@
 
 #import <QuartzCore/CATransaction.h>
 
-#import <pop/POPDefines.h>
+#if defined POP_SWIFT_PACKAGE
+    #import <POPDefines.h>
+#else
+    #import <pop/POPDefines.h>
+#endif
 
 #ifdef __cplusplus
 
