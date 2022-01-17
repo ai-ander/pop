@@ -412,7 +412,7 @@ static void stopAndCleanup(POPAnimator *self, POPAnimatorItemRef item, bool shou
 }
 
 #if !TARGET_OS_IPHONE
-- (instancetype)initWithDisplayID:(CGDirectDisplayID)displayID
+- (instancetype)initWithDisplayID:(UInt32)displayID
 {
   if (kCGNullDirectDisplay == displayID) {
     return [self init];
